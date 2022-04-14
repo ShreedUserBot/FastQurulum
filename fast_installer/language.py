@@ -30,4 +30,4 @@ def importlang ():
     return COUNTRY, LANGUAGE, TZ
 
 COUNTRY, LANGUAGE, TZ = importlang()
-LANG = loads(open(f"./shreed_installer/language/{LANGUAGE}.shreedjson", "r").read())["STRINGS"]
+LANG = loads(open(f"./fast_installer/language/{LANGUAGE}.fastjson", "r").read())["STRINGS"]
