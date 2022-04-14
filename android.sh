@@ -15,7 +15,7 @@ echo -e $MESAJ
 echo "TeleThon Yüklənir.....♻️"
 pip install telethon
 echo "Son Yükləmələr ♻️"
-git clone https://github.com/ShreedUserBot/shreed_installer
+git clone https://github.com/FastUserBot/fast_installer
 clear
 echo -e $MESAJ
 cd fast_installer
