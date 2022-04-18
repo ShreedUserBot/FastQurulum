@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     SyperStringKey = "FastUserBot"
     GiperStringKey = "FastUserBot/"
-    InvalidKey = "http://github.com/" 
+    InvalidKey = "https://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
     if os.path.isdir("./FastUserBot/"):
