@@ -5,7 +5,7 @@
         <a href="https://t.me/ShreedUserBot">FastSupport 🧑‍🔧</a> |
 
         ❗Termux Qurulumu Üçün❗
-    bash <(curl -L https://t.ly/hsg9)
+    bash <(curl -L https://t.ly/6bPs)
         
         
 ## 📱Klonlama Tədbirləri.
