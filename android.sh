@@ -18,7 +18,7 @@ echo "Son Yükləmələr ♻️"
 git clone https://github.com/FastUserBot/FastQurulum
 clear
 echo -e $MESAJ
-cd fast_installer
+cd FastQurulum
 clear
 echo "Tənzimləmə Başladı 🧑‍🔧..."
 echo -e $MESAJ
