@@ -29,7 +29,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "fast" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "fastuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -69,7 +69,7 @@ async def botlog (String, Api, Hash):
     ))
     KanalId = KanalId.chats[0].id
     
-    Photo = await Client.upload_file(file='shreedlogo.jpg')
+    Photo = await Client.upload_file(file='fastlogo.jpg')
     await Client(EditPhotoRequest(channel=KanalId, 
         photo=Photo))   
     msg = await Client.send_message(KanalId, LANG['DONT_LEAVE'])
@@ -101,14 +101,14 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "FastUserBot"
+    SyperStringKey = "FastQurulum"
     GiperStringKey = "FastUserBot/"
-    InvalidKey = "https://github.com/" 
+    InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./FastUserBot/"):
-        rm_r("./FastUserBot/")
-    repo = Repo.clone_from(str1,"./FastUserBot/", branch="main")
+    if os.path.isdir("./FastQurulum/"):
+        rm_r("./FastQurulum/")
+    repo = Repo.clone_from(str1,"./FastQurulum/", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
@@ -143,11 +143,11 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/FastUserBot/FastUserBot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/FastUserBot/FasQurulum"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
     config['LANGUAGE'] = LANGUAGE
-    config['TELEGRAPH_SHORT_NAME'] = "fastuserbot"
+    config['TELEGRAPH_SHORT_NAME'] = "FastUserBot"
     config["TMP_DOWNLOAD_DIRECTORY"] = "./DOWNLOADS/"
 
     basarili(LANG['SUCCESS_CONFIG'])
